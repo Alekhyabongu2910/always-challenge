@@ -39,19 +39,19 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
         }
 
-        fetch("http://localhost:3000/login", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({
-                username,
-                password,
-                captchaToken
-            })
-        })
-        .then(res => res.json())
-        .then(data => {
-            console.log("✅ Server Response:", data);
-            alert(JSON.stringify(data));
-        });
+        //  fetch("http://localhost:3000/login", {
+        //     method: "POST",
+        //     headers: { "Content-Type": "application/json" },
+        //     body: JSON.stringify({
+        //         username,
+        //         password,
+        //         captchaToken
+        //     })
+        // })
+       // .then(res => res.json())
+        ///.then(data => {
+         //   console.log("✅ Server Response:", data);
+            alert("Login Successful Username: "+ username);
+       // });
     });
 });
