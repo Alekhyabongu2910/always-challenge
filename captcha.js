@@ -22,8 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             if (!captchaWidget) {
                 captchaWidget = turnstile.render("#captchaContainer", {
-                    //sitekey: "0x4AAAAAACu4Tui8t6m8ZCY6",
-                    sitekey="1x00000000000000000000AA",
+                    sitekey: "0x4AAAAAACu4Tui8t6m8ZCY6",
                     theme: "light",
                     size: "normal", // ✅ shows green tick
                     appearance: "always",
